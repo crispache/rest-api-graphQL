@@ -12,7 +12,7 @@ export const CharacterCollectionContainer = () => {
     loadCharacterCollection();
   }, []);
 
-  const handleEdit = (id: string) => {
+  const handleEdit = (id: number) => {
     navigate(linkRoutes.editHotel(id));
   };
 

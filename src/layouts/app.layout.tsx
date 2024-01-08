@@ -14,7 +14,7 @@ export const AppLayout: React.FC<Props> = (props) => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" color="default">
         <Toolbar variant="dense">
           <IconButton color="inherit" aria-label="Menu">
             <AccountCircle />

@@ -3,46 +3,53 @@ import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader/CardHeader';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import CardActions from '@mui/material/CardActions';
-import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar/Avatar';
-import IconButton from '@mui/material/IconButton/IconButton';
-import EditIcon from '@mui/icons-material/Edit';
 import { CharacterEntityVm } from '../character-collection.vm';
 import * as classes from './character-card.styles';
+import { CardActionArea } from '@mui/material';
 
 interface Props {
   character: CharacterEntityVm;
-  onEdit: (id: string) => void;
+  onEdit: (id: number) => void;
 }
 
 export const CharacterCard: React.FunctionComponent<Props> = (props) => {
   const { character, onEdit } = props;
 
   return (
-    <Card>
-      <CardHeader
-        avatar={<Avatar aria-label="Hotel">{character.rating}</Avatar>}
-        title={character.name}
-        subheader={character.address}
-      />
-      <CardContent>
-        <div className={classes.content}>
-          <CardMedia
-            image={character.picture}
-            title={character.name}
-            style={{ height: 0, paddingTop: '56.25%' }}
-          />
-          <Typography variant="subtitle1" gutterBottom>
-            {character.description}
-          </Typography>
-        </div>
-      </CardContent>
-      <CardActions>
-        <IconButton onClick={() => onEdit(character.id)}>
-          <EditIcon />
-        </IconButton>
-      </CardActions>
+    <Card
+      variant="outlined"
+      sx={{
+        width: 350,
+        height: 390,
+        cursor: 'pointer',
+        borderRadius: 2,
+        '&:hover': { backgroundColor: '#03AEC7' },
+      }}
+    >
+      <CardActionArea
+        sx={{ height: '100%', padding: 2 }}
+        onClick={() => onEdit(character.id)}
+      >
+        <CardHeader
+          title={character.name}
+          titleTypographyProps={{ fontSize: '22px'}}
+          subheader={`${character.species} (${character.gender})`}
+        />
+        <CardContent>
+          <div className={classes.content}>
+            <CardMedia
+              component="img"
+              sx={{
+                height: 220,
+                width: '100%',
+                objectFit: 'cover',
+              }}
+              image={character.picture}
+              alt="Foto del personaje"
+            />
+          </div>
+        </CardContent>
+      </CardActionArea>
     </Card>
   );
 };
