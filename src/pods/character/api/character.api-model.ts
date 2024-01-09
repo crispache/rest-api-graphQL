@@ -5,7 +5,7 @@ export interface Character {
   species: string;
   type: string;
   gender: 'Female' | 'Male' | 'Genderless' | 'unknown';
-  sentences: string;
+  bestSentences: string;
   origin: {
       name: string,
       url: string,

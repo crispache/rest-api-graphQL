@@ -9,7 +9,7 @@ export const mapCharacterFromApiToVm = (
   image: character.image,
   gender: character.gender,
   species: character.species,
-  sentences: character.sentences
+  bestSentences: character.bestSentences
 });
 
 export const mapCharacterFromVmToApi = (
@@ -21,5 +21,5 @@ export const mapCharacterFromVmToApi = (
     image: character.image,
     gender: character.gender,
     species: character.species,
-    sentences: character.sentences
+    bestSentences: character.bestSentences
   } as unknown as apiModel.Character);

@@ -160,14 +160,3 @@ export const mockGenders: Lookup[] = [
     "name": "Male"
   },
 ];
-
-export const mockSentences: Lookup[] = [
-  {
-    "id": "1",
-    "name": "Wubba lubba dub dub!"
-  },
-  {
-    "id": "2",
-    "name": "I'm Pickle Rick!"
-  },
-];

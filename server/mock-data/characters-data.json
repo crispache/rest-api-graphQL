@@ -25,7 +25,6 @@
       "species": "Human",
       "type": "",
       "gender": "Male",
-      "sentences": [],
       "origin": {
         "name": "Earth (C-137)",
         "url": "https://rickandmortyapi.com/api/location/1"
@@ -90,7 +89,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/1",
       "created": "2017-11-04T18:48:46.250Z",
-      "bestSentences": "ey,\neded,\n"
+      "bestSentences": "Wubba lubba dub dub!\n"
     },
     {
       "id": 2,
@@ -99,7 +98,7 @@
       "species": "Human",
       "type": "",
       "gender": "Male",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "unknown",
         "url": ""
@@ -172,7 +171,7 @@
       "species": "Human",
       "type": "",
       "gender": "Female",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "Earth (Replacement Dimension)",
         "url": "https://rickandmortyapi.com/api/location/20"
@@ -232,7 +231,7 @@
       "species": "Human",
       "type": "",
       "gender": "Female",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "Earth (Replacement Dimension)",
         "url": "https://rickandmortyapi.com/api/location/20"
@@ -296,7 +295,7 @@
       "species": "Human",
       "type": "",
       "gender": "Male",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "Earth (Replacement Dimension)",
         "url": "https://rickandmortyapi.com/api/location/20"
@@ -357,7 +356,7 @@
       "species": "Alien",
       "type": "",
       "gender": "Female",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "Abadango",
         "url": "https://rickandmortyapi.com/api/location/2"
@@ -380,7 +379,7 @@
       "species": "Human",
       "type": "Genetic experiment",
       "gender": "Male",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "Earth (Replacement Dimension)",
         "url": "https://rickandmortyapi.com/api/location/20"
@@ -404,7 +403,7 @@
       "species": "Human",
       "type": "",
       "gender": "Male",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "unknown",
         "url": ""
@@ -427,7 +426,7 @@
       "species": "Human",
       "type": "",
       "gender": "Male",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "Earth (Replacement Dimension)",
         "url": "https://rickandmortyapi.com/api/location/20"
@@ -450,7 +449,7 @@
       "species": "Human",
       "type": "Superhuman (Ghost trains summoner)",
       "gender": "Male",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "unknown",
         "url": ""
@@ -473,7 +472,7 @@
       "species": "Human",
       "type": "",
       "gender": "Male",
-      "sentences": "",
+      "bestSentences": "",
       "origin": {
         "name": "Earth (C-137)",
         "url": "https://rickandmortyapi.com/api/location/1"
