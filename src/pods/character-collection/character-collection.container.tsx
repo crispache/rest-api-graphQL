@@ -13,7 +13,7 @@ export const CharacterCollectionContainer = () => {
   }, []);
 
   const handleEdit = (id: number) => {
-    navigate(linkRoutes.editHotel(id));
+    navigate(linkRoutes.editCharacter(id));
   };
 
   return (
