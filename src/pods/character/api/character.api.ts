@@ -27,7 +27,7 @@ export const getGenders = async (): Promise<Lookup[]> => {
 
 export const saveCharacter = async (character: Character): Promise<boolean> => {
   try {
-    await Axios.patch<Character>(
+    await Axios.put<Character>(
       `${characterListURL}/${character.id}`,
       character
     );
