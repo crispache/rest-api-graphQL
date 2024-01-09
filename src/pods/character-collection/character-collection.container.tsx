@@ -12,14 +12,14 @@ export const CharacterCollectionContainer = () => {
     loadCharacterCollection();
   }, []);
 
-  const handleEdit = (id: number) => {
-    navigate(linkRoutes.editHotel(id));
+  const navigateDetails = (id: number) => {
+    navigate(linkRoutes.characterDetails(id));
   };
 
   return (
     <CharacterCollectionComponent
       characterCollection={characterCollection}
-      onEdit={handleEdit}
+      onDetails={navigateDetails}
     />
   );
 };

@@ -9,11 +9,11 @@ import { CardActionArea } from '@mui/material';
 
 interface Props {
   character: CharacterEntityVm;
-  onEdit: (id: number) => void;
+  onDetails: (id: number) => void;
 }
 
 export const CharacterCard: React.FunctionComponent<Props> = (props) => {
-  const { character, onEdit } = props;
+  const { character, onDetails } = props;
 
   return (
     <Card
@@ -28,7 +28,7 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
     >
       <CardActionArea
         sx={{ height: '100%', padding: 2 }}
-        onClick={() => onEdit(character.id)}
+        onClick={() => onDetails(character.id)}
       >
         <CardHeader
           title={character.name}

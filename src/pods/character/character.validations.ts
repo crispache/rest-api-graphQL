@@ -5,7 +5,7 @@ import { minNumber } from '@lemoncode/fonk-min-number-validator';
 const validationSchema: ValidationSchema = {
   field: {
     name: [Validators.required],
-    description: [Validators.required],
+   /*  description: [Validators.required],
     rating: [
       {
         validator: minNumber,
@@ -13,7 +13,7 @@ const validationSchema: ValidationSchema = {
       },
     ],
     address: [Validators.required],
-    city: [Validators.required],
+    city: [Validators.required], */
   },
 };
 
